@@ -635,7 +635,7 @@ void Viewport::_notification(int p_what) {
 				Color ccol = get_tree()->get_debug_collision_contact_color();
 
 				for (int i = 0; i < point_count; i++) {
-					RenderingServer::get_singleton()->canvas_item_add_rect(contact_2d_debug, Rect2(points[i] - Vector2(2, 2), Vector2(5, 5)), ccol);
+					RenderingServer::get_singleton()->canvas_item_add_rect(contact_2d_debug, Rect2(points[i] - Vector2(0.3, 0.3), Vector2(0.6, 0.6)), ccol);
 				}
 			}
 #ifndef _3D_DISABLED
